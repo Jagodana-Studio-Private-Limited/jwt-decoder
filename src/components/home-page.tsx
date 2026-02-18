@@ -7,6 +7,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { AnimatedGradientText } from "@/components/animated-gradient-text";
 import { FAQSection } from "@/components/faq-section";
+import { RelatedTools } from "@/components/related-tools";
 import { siteConfig } from "@/config/site";
 
 export function HomePage() {
@@ -97,6 +98,9 @@ export function HomePage() {
               ))}
             </motion.div>
           )}
+
+          {/* Related Tools - Cross-linking for SEO */}
+          <RelatedTools />
 
           {/* FAQ Section */}
           <FAQSection />
