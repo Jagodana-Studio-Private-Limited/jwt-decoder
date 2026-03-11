@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "JWT Decoder",
-  title: "JWT Decoder — Decode & Inspect JSON Web Tokens Instantly",
+  name: "JWT Encoder & Decoder",
+  title: "JWT Encoder & Decoder — Encode, Decode & Verify JSON Web Tokens",
   description:
-    "Paste any JWT token to instantly decode its header, payload, and signature. Verify expiration, inspect claims, and debug auth issues — 100% client-side, no data sent to any server.",
+    "Encode, decode, and verify JSON Web Tokens like jwt.io. Edit header & payload, sign with HMAC (HS256/384/512), verify signatures, color-coded sections — 100% client-side.",
   url: "https://jwt-decoder.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
@@ -12,16 +12,21 @@ export const siteConfig = {
 
   // SEO
   keywords: [
+    "jwt encoder",
     "jwt decoder",
-    "jwt token decoder",
-    "json web token decoder",
+    "jwt encoder decoder",
+    "jwt token generator",
+    "json web token encoder",
     "jwt debugger",
     "jwt inspector",
-    "decode jwt online",
+    "jwt signature verification",
+    "jwt.io alternative",
     "jwt payload viewer",
     "jwt claims inspector",
     "jwt expiration checker",
     "jwt header decoder",
+    "create jwt token online",
+    "verify jwt signature",
   ],
   applicationCategory: "DeveloperApplication",
 
@@ -46,44 +51,45 @@ export const siteConfig = {
   // Footer
   footer: {
     about:
-      "JWT Decoder is a free, privacy-first tool that decodes JSON Web Tokens entirely in your browser. Inspect headers, payloads, claims, and expiration — no data ever leaves your machine.",
+      "JWT Encoder & Decoder is a free, privacy-first tool for encoding, decoding, and verifying JSON Web Tokens entirely in your browser. Edit headers & payloads, sign with HMAC, verify signatures — no data ever leaves your machine.",
     featuresTitle: "Features",
     features: [
-      "Instant JWT decoding",
-      "Header & payload inspection",
-      "Expiration status check",
+      "JWT encoding & decoding",
+      "HMAC signature signing & verification",
+      "Color-coded token sections",
+      "Live bidirectional editing",
       "100% client-side processing",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "Free & Private JWT Inspector",
-    titleLine1: "Decode Any",
-    titleGradient: "JSON Web Token",
+    badge: "Free & Private JWT Tool — Like jwt.io",
+    titleLine1: "Encode & Decode",
+    titleGradient: "JSON Web Tokens",
     subtitle:
-      "Paste a JWT to instantly see its header, payload, and claims. Check expiration, inspect algorithms, and debug authentication — all in your browser, nothing sent to a server.",
+      "Create, decode, and verify JWTs with color-coded sections. Edit header & payload, sign with HMAC (HS256/384/512), and verify signatures — all in your browser.",
   },
 
   // Feature Cards
   featureCards: [
     {
-      icon: "🔓",
-      title: "Instant Decode",
+      icon: "🔐",
+      title: "Encode & Sign",
       description:
-        "Paste any JWT and instantly see the decoded header, payload, and signature — no waiting, no server calls.",
+        "Edit header and payload JSON, choose your algorithm, provide a secret — and get a signed JWT instantly.",
     },
     {
-      icon: "⏱️",
-      title: "Expiration Check",
+      icon: "🎨",
+      title: "Color-Coded Sections",
       description:
-        "Automatically detects exp, iat, and nbf claims and shows whether the token is expired, valid, or not yet active.",
+        "Header (red), payload (purple), and signature (blue) are color-coded just like jwt.io for easy reading.",
     },
     {
-      icon: "🔒",
-      title: "100% Client-Side",
+      icon: "✅",
+      title: "Verify Signatures",
       description:
-        "Your tokens never leave your browser. Zero network requests — completely safe for production JWTs.",
+        "Enter your HMAC secret to verify JWT signatures client-side. Supports HS256, HS384, and HS512.",
     },
   ],
 
@@ -130,18 +136,18 @@ export const siteConfig = {
   // HowTo Steps
   howToSteps: [
     {
-      name: "Paste Your JWT",
-      text: "Copy a JSON Web Token from your application, API response, or auth header and paste it into the input field.",
+      name: "Decode a JWT",
+      text: "Paste a JWT into the left panel. The header, payload, and signature are instantly decoded and displayed in color-coded sections on the right.",
       url: "",
     },
     {
-      name: "View Decoded Output",
-      text: "The header and payload are instantly decoded and displayed with syntax highlighting and formatted JSON.",
+      name: "Encode a JWT",
+      text: "Edit the header and payload JSON on the right panel. Choose an algorithm (HS256/384/512), enter your signing secret, and the encoded JWT updates live on the left.",
       url: "",
     },
     {
-      name: "Inspect Claims & Expiration",
-      text: "Check token claims like iss, sub, aud, exp, and iat. The tool automatically shows whether the token is expired or still valid.",
+      name: "Verify Signature",
+      text: "Enter your HMAC secret in the signature section. The tool verifies whether the signature matches the token content — all client-side, nothing sent to a server.",
       url: "",
     },
   ],
@@ -162,7 +168,7 @@ export const siteConfig = {
     {
       question: "Can this tool verify JWT signatures?",
       answer:
-        "This tool decodes and inspects JWTs but does not verify signatures, since that requires the signing secret or public key. It's designed for debugging and inspecting token contents.",
+        "Yes! Enter your HMAC secret key in the signature section and the tool will verify whether the signature is valid. It supports HS256, HS384, and HS512 algorithms — all verification happens client-side in your browser.",
     },
     {
       question: "What claims does the tool detect?",
@@ -179,9 +185,9 @@ export const siteConfig = {
   // Pages
   pages: {
     "/": {
-      title: "JWT Decoder — Decode & Inspect JSON Web Tokens Instantly",
+      title: "JWT Encoder & Decoder — Encode, Decode & Verify JSON Web Tokens",
       description:
-        "Paste any JWT token to instantly decode its header, payload, and signature. Verify expiration, inspect claims, and debug auth issues — 100% client-side.",
+        "Encode, decode, and verify JSON Web Tokens like jwt.io. Edit header & payload, sign with HMAC (HS256/384/512), verify signatures — 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
