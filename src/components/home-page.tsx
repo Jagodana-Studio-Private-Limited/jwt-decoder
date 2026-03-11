@@ -11,7 +11,7 @@ import { RelatedTools } from "@/components/related-tools";
 import { Button } from "@/components/ui/button";
 import { SocialShare } from "@/components/social-share";
 import { GitHubStar } from "@/components/github-star";
-import { JWTDecoderTool } from "@/components/jwt-decoder-tool";
+import { JWTEncoderDecoderTool } from "@/components/jwt-encoder-decoder-tool";
 import { siteConfig } from "@/config/site";
 
 export function HomePage() {
@@ -113,7 +113,7 @@ export function HomePage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
           >
-            <JWTDecoderTool />
+            <JWTEncoderDecoderTool />
           </motion.div>
         </section>
 
