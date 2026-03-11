@@ -1,174 +1,190 @@
 export const siteConfig = {
-  // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "JWT Decoder",
+  title: "JWT Decoder — Decode & Inspect JSON Web Tokens Instantly",
+  description:
+    "Paste any JWT token to instantly decode its header, payload, and signature. Verify expiration, inspect claims, and debug auth issues — 100% client-side, no data sent to any server.",
+  url: "https://jwt-decoder.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
-  // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  headerIcon: "KeyRound",
+  brandAccentColor: "#6366f1",
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "jwt decoder",
+    "jwt token decoder",
+    "json web token decoder",
+    "jwt debugger",
+    "jwt inspector",
+    "decode jwt online",
+    "jwt payload viewer",
+    "jwt claims inspector",
+    "jwt expiration checker",
+    "jwt header decoder",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
   // Branding
   creator: "Jagodana",
   creatorUrl: "https://jagodana.com",
   twitterHandle: "@jagodana",
 
-  // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/jwt-decoder",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "JWT Decoder is a free, privacy-first tool that decodes JSON Web Tokens entirely in your browser. Inspect headers, payloads, claims, and expiration — no data ever leaves your machine.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Instant JWT decoding",
+      "Header & payload inspection",
+      "Expiration status check",
+      "100% client-side processing",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free & Private JWT Inspector",
+    titleLine1: "Decode Any",
+    titleGradient: "JSON Web Token",
+    subtitle:
+      "Paste a JWT to instantly see its header, payload, and claims. Check expiration, inspect algorithms, and debug authentication — all in your browser, nothing sent to a server.",
   },
 
-  // Feature Cards (shown on homepage)
+  // Feature Cards
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🔓",
+      title: "Instant Decode",
+      description:
+        "Paste any JWT and instantly see the decoded header, payload, and signature — no waiting, no server calls.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "⏱️",
+      title: "Expiration Check",
+      description:
+        "Automatically detects exp, iat, and nbf claims and shows whether the token is expired, valid, or not yet active.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "🔒",
+      title: "100% Client-Side",
+      description:
+        "Your tokens never leave your browser. Zero network requests — completely safe for production JWTs.",
     },
   ],
 
-  // Related Tools (cross-linking to sibling Jagodana tools for internal SEO)
+  // Related Tools
   relatedTools: [
     {
-      name: "Favicon Generator",
-      url: "https://favicon-generator.jagodana.com",
-      icon: "🎨",
-      description: "Generate all favicon sizes + manifest from any image.",
+      name: "JSON Formatter",
+      url: "https://json-formatter.tools.jagodana.com",
+      icon: "📋",
+      description: "Format and beautify JSON with syntax highlighting.",
     },
     {
-      name: "Sitemap Checker",
-      url: "https://sitemap-checker.jagodana.com",
+      name: "JSON Path Finder",
+      url: "https://json-path-finder.tools.jagodana.com",
       icon: "🔍",
-      description: "Discover and validate sitemaps on any website.",
+      description: "Find paths to any value in nested JSON instantly.",
+    },
+    {
+      name: "Text Case Converter",
+      url: "https://text-case-converter.tools.jagodana.com",
+      icon: "🔤",
+      description: "Convert text between camelCase, snake_case, and more.",
     },
     {
       name: "Regex Playground",
-      url: "https://regex-playground.jagodana.com",
+      url: "https://regex-playground.tools.jagodana.com",
       icon: "🧪",
       description: "Build, test & debug regular expressions in real-time.",
     },
     {
-      name: "Screenshot Beautifier",
-      url: "https://screenshot-beautifier.jagodana.com",
-      icon: "📸",
-      description: "Transform screenshots into beautiful images.",
+      name: "HTTP Status Debugger",
+      url: "https://http-status-debugger.tools.jagodana.com",
+      icon: "🌐",
+      description: "Decode HTTP status codes and fix API errors fast.",
     },
     {
-      name: "Color Palette Explorer",
-      url: "https://color-palette-explorer.jagodana.com",
-      icon: "🎭",
-      description: "Extract color palettes from any image.",
-    },
-    {
-      name: "Logo Maker",
-      url: "https://logo-maker.jagodana.com",
-      icon: "✏️",
-      description: "Create a professional logo in 60 seconds.",
+      name: "Password Generator",
+      url: "https://password-generator.tools.jagodana.com",
+      icon: "🔑",
+      description: "Generate secure, random passwords instantly.",
     },
   ],
 
-  // HowTo Steps (drives HowTo JSON-LD schema for rich results)
+  // HowTo Steps
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Paste Your JWT",
+      text: "Copy a JSON Web Token from your application, API response, or auth header and paste it into the input field.",
+      url: "",
+    },
+    {
+      name: "View Decoded Output",
+      text: "The header and payload are instantly decoded and displayed with syntax highlighting and formatted JSON.",
+      url: "",
+    },
+    {
+      name: "Inspect Claims & Expiration",
+      text: "Check token claims like iss, sub, aud, exp, and iat. The tool automatically shows whether the token is expired or still valid.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
-  // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
+  // FAQ
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "Is it safe to paste my JWT token here?",
+      answer:
+        "Yes — JWT Decoder runs 100% in your browser. Your token is never sent to any server. All decoding happens locally using JavaScript. You can verify this by checking your browser's network tab.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "What is a JSON Web Token (JWT)?",
+      answer:
+        "A JWT is a compact, URL-safe token format used for authentication and authorization. It consists of three Base64-encoded parts separated by dots: a header (algorithm & type), a payload (claims like user ID, roles, expiration), and a signature.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can this tool verify JWT signatures?",
+      answer:
+        "This tool decodes and inspects JWTs but does not verify signatures, since that requires the signing secret or public key. It's designed for debugging and inspecting token contents.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What claims does the tool detect?",
+      answer:
+        "It detects and highlights all registered claims including iss (issuer), sub (subject), aud (audience), exp (expiration), nbf (not before), iat (issued at), and jti (JWT ID). Custom claims are also displayed.",
+    },
+    {
+      question: "Does this work with expired tokens?",
+      answer:
+        "Yes. You can decode any JWT regardless of whether it's expired. The tool will show the expiration status and how long ago it expired or when it will expire.",
     },
   ],
 
-  // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
+  // Pages
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "JWT Decoder — Decode & Inspect JSON Web Tokens Instantly",
+      description:
+        "Paste any JWT token to instantly decode its header, payload, and signature. Verify expiration, inspect claims, and debug auth issues — 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
