@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "JWT Encoder & Decoder",
-  title: "JWT Encoder & Decoder — Encode, Decode & Verify JSON Web Tokens",
+  name: "JWT Token Decoder",
+  title: "JWT Token Decoder — Decode & Inspect JSON Web Tokens Instantly",
   description:
-    "Encode, decode, and verify JSON Web Tokens like jwt.io. Edit header & payload, sign with HMAC (HS256/384/512), verify signatures, color-coded sections — 100% client-side.",
+    "Decode and inspect JWT tokens with claim details and expiration checking. Paste any JWT to see the decoded header, payload, and signature — plus encode and sign with HMAC (HS256/384/512). 100% client-side.",
   url: "https://jwt-decoder.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
@@ -51,7 +51,7 @@ export const siteConfig = {
   // Footer
   footer: {
     about:
-      "JWT Encoder & Decoder is a free, privacy-first tool for encoding, decoding, and verifying JSON Web Tokens entirely in your browser. Edit headers & payloads, sign with HMAC, verify signatures — no data ever leaves your machine.",
+      "JWT Token Decoder is a free, privacy-first tool for decoding, encoding, and verifying JSON Web Tokens entirely in your browser. Inspect claims, check expiration, sign with HMAC — no data ever leaves your machine.",
     featuresTitle: "Features",
     features: [
       "JWT encoding & decoding",
@@ -65,10 +65,10 @@ export const siteConfig = {
   // Hero Section
   hero: {
     badge: "Free & Private JWT Tool — Like jwt.io",
-    titleLine1: "Encode & Decode",
+    titleLine1: "Decode & Inspect",
     titleGradient: "JSON Web Tokens",
     subtitle:
-      "Create, decode, and verify JWTs with color-coded sections. Edit header & payload, sign with HMAC (HS256/384/512), and verify signatures — all in your browser.",
+      "Paste any JWT to instantly see decoded header, payload, and claims. Check expiration status, interpret registered claims, and also encode & sign tokens with HMAC — all in your browser.",
   },
 
   // Feature Cards
@@ -185,9 +185,9 @@ export const siteConfig = {
   // Pages
   pages: {
     "/": {
-      title: "JWT Encoder & Decoder — Encode, Decode & Verify JSON Web Tokens",
+      title: "JWT Token Decoder — Decode & Inspect JSON Web Tokens Instantly",
       description:
-        "Encode, decode, and verify JSON Web Tokens like jwt.io. Edit header & payload, sign with HMAC (HS256/384/512), verify signatures — 100% client-side.",
+        "Decode and inspect JWT tokens with claim details and expiration checking. Paste any JWT to see the decoded header, payload, and signature — 100% client-side.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },

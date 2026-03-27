@@ -183,7 +183,7 @@ function JsonView({
                 )}
                 {label && (
                   <span className="text-muted-foreground/60 text-xs ml-2 self-center">
-                    // {label}
+                    {"// "}{label}
                     {isTimestamp && (
                       <> — {new Date((value as number) * 1000).toUTCString()}</>
                     )}
